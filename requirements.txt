@@ -1,0 +1,7 @@
+Pillow
+timm==0.4.12
+torch
+torchvision
+salesforce-lavis
+transformers
+gradio

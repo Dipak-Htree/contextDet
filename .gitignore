@@ -1,0 +1,9 @@
+.venv 
+build/
+__pycache__/
+csrc.egg-info/
+dist/
+outputs/
+test_set/
+venv/
+*.pth
