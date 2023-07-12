@@ -65,7 +65,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--llm_name', default='bert-base-cased')
 
     parser.add_argument('--resume', default='', type=str)
-    return parser.parse_args()
+    # return parser.parse_args()
+    return parser.parse_known_args()
+
 
 
 COLORS = [
@@ -112,7 +114,7 @@ class ContextDetDemo():
             T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ])
 
-        args = parse_args()
+        args, _ = parse_args()
 
         args.llm_name = 'caption_coco_opt2.7b'
         args.resume = resume
