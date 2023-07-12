@@ -7,3 +7,4 @@ outputs/
 test_set/
 venv/
 *.pth
+categories_images
